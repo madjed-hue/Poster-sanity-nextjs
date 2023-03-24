@@ -1,3 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #f1f0f0;
+  font-family: "Poppins", sans-serif !important;
+}
+.ReactTags__tagInput input.ReactTags__tagInputField {
+  width: 100%;
+  background: #f5f4f4;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+.ReactTags__selected {
+  margin: 10px 0 5px;
+}
+.ReactTags__selected span.ReactTags__tag {
+  background: rgb(255, 136, 0);
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.ReactTags__remove {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.ReactTags__suggestions {
+  color: red;
+  margin-top: 5px;
+  cursor: pointer;
+}
