@@ -42,9 +42,6 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-30 md:h-24 shadow bg-white flex flex-col justify-center items-center py-4">
-      {/* <div className="md:hidden">
-        <Stories />
-      </div> */}
       <div className="max-w-7xl w-full">
         <div className="flex items-center justify-between px-2 lg:px-10 md:px-5 relative max-w-screen-2xl mx-auto">
           {/* logo */}
@@ -55,7 +52,7 @@ const Navbar = () => {
           </div>
 
           {/* stories */}
-          <div className="hidden sm:flex items-center justify-evenly w-full">
+          <div className="flex items-center justify-start sm:justify-evenly w-full">
             <Stories />
             <AiOutlinePlusCircle
               size={45}

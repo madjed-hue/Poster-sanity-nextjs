@@ -53,7 +53,7 @@ const Home = ({ feeds }: Props) => {
                 <Story />
                 <AiOutlineClose
                   size={24}
-                  className="text-white cursor-pointer top-[15%] right-[33%] absolute font-bold"
+                  className="text-white cursor-pointer top-[15%] right-[3%] lg:right-[33%] absolute font-bold"
                   onClick={() => setIsOpen(false)}
                 />
               </div>
