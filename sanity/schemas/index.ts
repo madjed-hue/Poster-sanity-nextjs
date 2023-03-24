@@ -1,6 +1,6 @@
 import poster from './poster'
 import comment from './comment'
 import user from './user'
-import Stories from './Stories'
+import stories from './stories'
 
-export const schemaTypes = [poster, comment, user, Stories]
+export const schemaTypes = [poster, comment, user, stories]
