@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 import React, { useContext, useState } from "react";
 import { toast } from "react-hot-toast";
@@ -63,12 +63,21 @@ const VideoFeed = () => {
           <p className="text-center">
             Please Complete Your profile to start Posting.
           </p>
-          <Link
-            href={`/profile/${session?.user?.email}`}
-            className="text-blue-700 underline"
-          >
-            Complete Now
-          </Link>
+          {session ? (
+            <Link
+              href={`/profile/${session?.user?.email}`}
+              className="text-blue-700 underline"
+            >
+              Complete Now
+            </Link>
+          ) : (
+            <button
+              onClick={() => signIn()}
+              className="text-blue-700 underline"
+            >
+              Sign In
+            </button>
+          )}
         </div>
       ) : (
         <div>
